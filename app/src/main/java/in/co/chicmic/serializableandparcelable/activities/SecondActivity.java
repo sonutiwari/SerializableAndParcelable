@@ -20,11 +20,11 @@ public class SecondActivity extends AppCompatActivity {
         Bundle data = getIntent().getExtras();
         if (data != null){
             parcelableTextView
-                    .setText(data.getParcelable(AppConstants.PARCELABLE_OBJECT).toString());
+                    .setText(data.getParcelable(AppConstants.sPARCELABLE_OBJECT).toString());
             serializableTextView
-                    .setText(data.getSerializable(AppConstants.SERIALIZABLE_OBJECT).toString());
+                    .setText(data.getSerializable(AppConstants.sSERIALIZABLE_OBJECT).toString());
             Parcelable[] temp
-                    = data.getParcelableArray(AppConstants.PARCELABLE_ARRAY_OBJECT);
+                    = data.getParcelableArray(AppConstants.sPARCELABLE_ARRAY_OBJECT);
             assert temp != null;
             for (Parcelable employee : temp){
                 parcelableTextViewArray

@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
         mParcelableAndSerializableIntent = new Intent(this, SecondActivity.class);
         mParcelableAndSerializableIntent
-                .putExtra(AppConstants.PARCELABLE_OBJECT, (Parcelable) newEmployee);
+                .putExtra(AppConstants.sPARCELABLE_OBJECT, (Parcelable) newEmployee);
         mParcelableAndSerializableIntent
-                .putExtra(AppConstants.SERIALIZABLE_OBJECT, (Serializable) newEmployee);
+                .putExtra(AppConstants.sSERIALIZABLE_OBJECT, (Serializable) newEmployee);
         mParcelableAndSerializableIntent
-                .putExtra(AppConstants.PARCELABLE_ARRAY_OBJECT, employeeArray);
+                .putExtra(AppConstants.sPARCELABLE_ARRAY_OBJECT, employeeArray);
         findViewById(R.id.btn_next).setOnClickListener(this);
 
     }
