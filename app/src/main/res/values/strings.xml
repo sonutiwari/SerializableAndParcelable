@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Serializable And Parcelable</string>
+    <string name="btn_txt">Go to next activity</string>
+</resources>
